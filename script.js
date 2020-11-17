@@ -1,23 +1,18 @@
-//JavaScript for Kids
+// JavaScript for Kids
 
+// Random insult generator
+// Math.floor rounds up number
+// Math.random gives random number from 0-1
 
-
-
-//Random insult generator 
-Math.floor //rounds up number
-Math.random //gives random number from 0-1
-
-
-const firstWord = ['Scheiß', 'Dumm' , 'Ray' , 'Arsch'];
+const firstWord = ['Scheiß', 'Dumm', 'Ray', 'Arsch'];
 const secondWord = ['klo', 'kotz', 'fett', 'schakal'];
-let thridWord = ['idiot', 'kopf' , 'schwein' , 'pimmel'];
+const thridWord = ['idiot', 'kopf', 'schwein', 'pimmel'];
 
-thridWord.push = ('lauch'); //Why is it not adding it to the Array?
+thridWord.push('lauch');
 
-let firstWords = firstWord[Math.floor(Math.random() * 4)];
-let secondWords = secondWord[Math.floor(Math.random() * 4)];
-let thridWords = thridWord[Math.floor(Math.random() * thridWord.length)];
+const firstWords = firstWord[Math.floor(Math.random() * 4)];
+const secondWords = secondWord[Math.floor(Math.random() * 4)];
+const thridWords = thridWord[Math.floor(Math.random() * thridWord.length)];
 
-
-const randomInsult = `Du bist ein ${firstWords}${secondWords}${thridWords} `;
-console.log(randomInsult)
+const randomInsult = `Du bist ein ${firstWords}${secondWords}${thridWords}`;
+console.log(randomInsult);
