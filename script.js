@@ -21,17 +21,18 @@ AgeInSeconds(21);
 
 
 // Programming challenge 1 
+
+// Add scores
 scores = {
     raphael:0,
     david:0,
 
 }
 scores.raphael += 2; 
-
 console.log(scores);
 
 
-
+// delete number property
 var myCrazyObject = {
     "name": "A ridiculous object",
     "some array": [7, 9, { purpose: "confusion", number: 123 }, 3.3],
@@ -45,6 +46,7 @@ console.log (myCrazyObject)
 
 // Programming challenge 2 
 
+//
 var animals = ["Cat", "Fish","Lemur", "Komodo Dragon"];
 let awesomeanimals = []
 for (let rep = 0; rep < animals.length;rep ++) {
