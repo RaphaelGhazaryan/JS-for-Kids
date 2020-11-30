@@ -46,17 +46,28 @@ console.log (myCrazyObject)
 
 // Programming challenge 2 
 
-//
+// All animals with awesome before
 var animals = ["Cat", "Fish","Lemur", "Komodo Dragon"];
-let awesomeanimals = []
+let awesomeanimals = [];
 for (let rep = 0; rep < animals.length;rep ++) {
     awesomeanimals.push ('Awesome ' + animals[rep]);
 }
 console.log(awesomeanimals)
 
 
-
+// Random letter generator
 const alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 const alphabetRandom = alphabet[Math.floor(Math.random() * alphabet.length)];
 const randomAlphabet = `Dein Glücksbuchstabe is ${alphabetRandom}`;
 console.log(randomAlphabet);
+
+// H4CK3R SP34K
+let input = "javascript is awesome";
+let output = "";
+for (let rep = 0; rep < output.length; rep++) {
+    if(alphabet[0]){
+        "3"
+    }
+    output.push(input[rep])
+}
+console.log(output);
