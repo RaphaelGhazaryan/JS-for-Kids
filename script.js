@@ -39,9 +39,9 @@ const alphabet = [
   "y",
   "z",
 ];
-const alphabetRandom = alphabet[Math.floor(Math.random() * alphabet.length)];
-const randomAlphabet = `Dein Glücksbuchstabe is ${alphabetRandom}`;
-console.log(randomAlphabet);
+const randomLetter = alphabet[Math.floor(Math.random() * alphabet.length)];
+const luckyLetterText = `Dein Glücksbuchstabe is ${randomLetter}`;
+console.log(luckyLetterText);
 
 // H4CK3R SP34K
 
@@ -65,27 +65,14 @@ let input = "javascript is super awesome"; // j4v4scr1pt 1s 4w3s0m3
 let output = "";
 for (let rep = 0; rep < input.length; rep++) {
   let currentLetter = input[rep];
-  if (currentLetter === "a") {
-    currentLetter = "4";
-  }
-  if (currentLetter === "e") {
-    currentLetter = "3";
-  }
-  if (currentLetter === "o") {
-    currentLetter = "0";
-  }
-  if (currentLetter === "i") {
-    currentLetter = "1";
-  }
-  if (currentLetter === "j") {
-    currentLetter = currentLetter.toLowerCase();
-  }
-  if (currentLetter === "s") {
-    currentLetter = currentLetter.toLowerCase();
-  } else {
-    currentLetter = currentLetter.toUpperCase();
-  }
 
+  currentLetter === "a" ? (currentLetter = "4") : "";
+  currentLetter === "i" ? (currentLetter = "1") : "";
+  currentLetter === "o" ? (currentLetter = "0") : "";
+  currentLetter === "j" ? (currentLetter = currentLetter.toLowerCase()) : "";
+  currentLetter === "s"
+    ? (currentLetter = currentLetter.toLowerCase())
+    : (currentLetter = currentLetter.toUpperCase());
   output = output + currentLetter;
 }
 
