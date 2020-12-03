@@ -46,7 +46,7 @@ console.log(randomAlphabet);
 // H4CK3R SP34K
 
 // 1
-let input = "javascript is awesome"; // j4v4scr1pt 1s 4w3s0m3
+/*let input = "javascript is awesome"; // j4v4scr1pt 1s 4w3s0m3
 let output = "";
 for (let rep = 0; rep < input.length; rep++) {
   const currentLetter = changeLetter(input[rep]);
@@ -58,10 +58,10 @@ function changeLetter(letter) {
   if (letter === "e") return "3";
   if (letter === "o") return "0";
   return letter;
-}
+}*/
 
 // 2
-let input = "javascript is awesome"; // j4v4scr1pt 1s 4w3s0m3
+let input = "javascript is super awesome"; // j4v4scr1pt 1s 4w3s0m3
 let output = "";
 for (let rep = 0; rep < input.length; rep++) {
   let currentLetter = input[rep];
@@ -74,6 +74,19 @@ for (let rep = 0; rep < input.length; rep++) {
   if (currentLetter === "o") {
     currentLetter = "0";
   }
+  if (currentLetter === "i") {
+    currentLetter = "1";
+  }
+  if (currentLetter === "j") {
+    currentLetter = currentLetter.toLowerCase();
+  }
+  if (currentLetter === "s") {
+    currentLetter = currentLetter.toLowerCase();
+  } else {
+    currentLetter = currentLetter.toUpperCase();
+  }
+
   output = output + currentLetter;
 }
+
 console.log("output", output);
